@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Build Your Own PC</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+</head>
+
+<body class="bg-light">
+    <div class="container py-4">
+        <h1 class="text-center mb-4">Build Your Own PC</h1>
+        <h4>自作PCを作るときのパーツ選びの参考にしてください<br>Please use this as a reference when selecting parts for building your custom
+            PC.
+        </h4>
+        <br>
+        <div class="card mb-3">
+            <div class="card-body">
+                <h5 class="card-title">Step 1: Select Your CPU</h5>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="cpu-brand">Brand</label>
+                        <select id="cpu-brand" class="form-control">
+                            <option value="nothing">-</option>
+                        </select>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="cpu-model">Model</label>
+                        <select id="cpu-model" class="form-control">
+                            <option value="nothing">-</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card mb-3">
+            <div class="card-body">
+                <h5 class="card-title">Step 2: Select Your GPU</h5>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="gpu-brand">Brand</label>
+                        <select id="gpu-brand" class="form-control">
+                            <option value="nothing">-</option>
+                        </select>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="gpu-model">Model</label>
+                        <select id="gpu-model" class="form-control">
+                            <option value="nothing">-</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card mb-3">
+            <div class="card-body">
+                <h5 class="card-title">Step 3: Select Your Memory</h5>
+                <div class="form-row">
+                    <div class="form-group col-md-4">
+                        <label for="ram-num">How Many?</label>
+                        <select id="ram-num" class="form-control">
+                            <option value="nothing">-</option>
+                        </select>
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="ram-brand">Brand</label>
+                        <select id="ram-brand" class="form-control">
+                            <option value="nothing">-</option>
+                        </select>
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="ram-model">Model</label>
+                        <select id="ram-model" class="form-control">
+                            <option value="nothing">-</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card mb-3">
+            <div class="card-body">
+                <h5 class="card-title">Step 4: Select Your Storage</h5>
+                <div class="form-row">
+                    <div class="form-group col-md-3">
+                        <label for="hdd-or-ssd">Type</label>
+                        <select id="hdd-or-ssd" class="form-control">
+                            <option value="nothing">-</option>
+                            <option value="hdd">HDD</option>
+                            <option value="ssd">SSD</option>
+                        </select>
+                    </div>
+                    <div class="form-group col-md-3">
+                        <label for="storage">Storage</label>
+                        <select id="storage" class="form-control">
+                            <option value="nothing">-</option>
+                        </select>
+                    </div>
+                    <div class="form-group col-md-3">
+                        <label for="storage-brand">Brand</label>
+                        <select id="storage-brand" class="form-control">
+                            <option value="nothing">-</option>
+                        </select>
+                    </div>
+                    <div class="form-group col-md-3">
+                        <label for="storage-model">Model</label>
+                        <select id="storage-model" class="form-control">
+                            <option value="nothing">-</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-center">
+            <button id="add" class="btn btn-primary btn-lg">Add PC</button>
+        </div>
+
+        <div id="parent" class="mt-4">
+            <!-- Added PCs will appear here -->
+        </div>
+    </div>
+    <script src="main.js"></script>
+
+</body>
+
+</html>
